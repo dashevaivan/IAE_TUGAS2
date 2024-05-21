@@ -15,10 +15,10 @@ app.get('/api/standings', (req, res) => {
         res.json(response.data);
     })
     .catch(error => {
-        res.status(500).send('Error fetching data');
+        res.status(500).send('Error');
     });
 });
 
 app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
+    console.log(`Port : ${port}`);
 });
